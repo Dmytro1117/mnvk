@@ -1,0 +1,93 @@
+@import '@fontsource/montserrat';
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/500.css';
+@import '@fontsource/montserrat/600.css';
+@import '@fontsource/montserrat/700.css';
+@import '@fontsource/montserrat/800.css';
+@import '@fontsource/montserrat/900.css';
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(
+    180.11deg,
+    #e5e2e3 10.73%,
+    #fdfefe 38.02%,
+    #e5e2e3 71.11%,
+    #fdfefe 99.91%
+  ); */
+
+  /* background-image: url('../src/images/5.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  /* border-radius: 2px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: skyblue;
+  /* border-radius: 5px; */
+}
+
+.btn,
+.btn-dark,
+.btn-check:focus + .btn-dark,
+.btn-dark:focus,
+.btn-check:focus + .btn,
+.btn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.btn-dark:hover {
+  background: #212529;
+}
+
+.bg-primary,
+.btn-light {
+  letter-spacing: 0.7px;
+}

@@ -7,8 +7,7 @@
 
 .icon-button.left,
 .icon-button.left.disable {
-  background: url(/mnvk/assets/icons/arrow_left.svg) center / 100% 100%
-    no-repeat;
+  background: url('/assets/icons/arrow_left.svg') center / 100% 100% no-repeat;
 }
 .icon-button.left:hover {
   background: url('../../../assets/icons/arrow_left_active.svg') center / 100%

@@ -76,7 +76,8 @@ export const Hero = styled.div`
       rgba(25, 26, 29, 0.7),
       rgba(47, 48, 58, 0.7)
     ),
-    url('/images/hero.jpg');
+    url(../../images/hero.jpg);
+     url(../images/hero/hero-mob-480.jpg);
 
   // background-size: cover;
   background-position: center;

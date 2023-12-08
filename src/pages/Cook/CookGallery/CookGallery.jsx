@@ -1,29 +1,28 @@
 import React from 'react';
 import { Container, Button, Img, Gallery } from './CookGallery.styled';
 import { Link } from 'react-router-dom';
-// import cook from '../../../../assets/CookImag/';
 
 const CookGallery = () => {
   const imagePaths = [
-    '/assets/CookImag/1.jpg',
-    '../assets/CookImag/2.jpg',
-    '../../../../assets/CookImag/3.jpg',
-    '../../../../public/images/CookImag/4.jpg',
-    '../../../../images/CookImag/5.jpg',
-    '../../../../public/images/CookImag/6.jpg',
-    '../../../../public/images/CookImag/7.jpg',
-    '../../../../public/images/CookImag/8.jpg',
-    '../../../../public/images/CookImag/9.jpg',
-    '../../../../public/images/CookImag/10.jpg',
-    '../../../../public/images/CookImag/11.jpg',
-    '../../../../public/images/CookImag/12.jpg',
-    '../../../../public/images/CookImag/13.jpg',
-    '../../../../public/images/CookImag/14.jpg',
-    '../../../../public/images/CookImag/15.jpg',
-    '../../../../public/images/CookImag/16.jpg',
-    '../../../../public/images/CookImag/17.jpg',
-    '../../../../public/images/CookImag/18.jpg',
-    '../../../../public/images/CookImag/19.jpg',
+    '../images/CookImag/1.jpg',
+    '../images/CookImag/2.jpg',
+    '../images/CookImag/3.jpg',
+    '../images/CookImag/4.jpg',
+    '../images/CookImag/5.jpg',
+    '../images/CookImag/6.jpg',
+    '../images/CookImag/7.jpg',
+    '../images/CookImag/8.jpg',
+    '../images/CookImag/9.jpg',
+    '../images/CookImag/10.jpg',
+    '../images/CookImag/11.jpg',
+    '../images/CookImag/12.jpg',
+    '../images/CookImag/13.jpg',
+    '../images/CookImag/14.jpg',
+    '../images/CookImag/15.jpg',
+    '../images/CookImag/16.jpg',
+    '../images/CookImag/17.jpg',
+    '../images/CookImag/18.jpg',
+    '../images/CookImag/19.jpg',
   ];
 
   return (

@@ -18,7 +18,7 @@ export const DataProvider = ({ children }) => {
 
   // Load JSON Data
   useEffect(() => {
-    fetch('/quizCook.json')
+    fetch('quizCook.json')
       .then(res => res.json())
       .then(data => setQuizs(data));
   }, []);

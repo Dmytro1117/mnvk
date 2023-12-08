@@ -18,7 +18,7 @@ export const DataProvider = ({ children }) => {
 
   // Load JSON Data
   useEffect(() => {
-    fetch('public/quizDriver.json')
+    fetch('/quizDriver.json')
       .then(res => res.json())
       .then(data => setQuizs(data));
   }, []);

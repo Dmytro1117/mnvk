@@ -18,7 +18,7 @@ export const DataProvider = ({ children }) => {
 
   // Load JSON Data
   useEffect(() => {
-    fetch('/quizCook.json')
+    fetch(`/public/guizeCook.json`)
       .then(res => res.json())
       .then(data => setQuizs(data));
   }, []);

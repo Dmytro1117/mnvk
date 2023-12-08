@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const LocksmithGallery = () => {
   const imagePaths = [
-    '/public/images/Слюсар/1.jpg',
-    '/public/images/Слюсар/2.jpg',
-    '/public/images/Слюсар/3.jpg',
-    '/public/images/Слюсар/4.jpg',
+    '../images/Слюсар/1.jpg',
+    '../images/Слюсар/2.jpg',
+    '../images/Слюсар/3.jpg',
+    '../images/Слюсар/4.jpg',
   ];
 
   return (

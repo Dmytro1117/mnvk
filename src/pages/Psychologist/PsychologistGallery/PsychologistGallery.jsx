@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const PsychologistGallery = () => {
   const imagePaths = [
-    '/public/images/Психолог/1.jpg',
-    '/public/images/Психолог/2.jpg',
-    '/public/images/Психолог/3.jpg',
-    '/public/images/Психолог/4.jpg',
-    '/public/images/Психолог/5.jpg',
-    '/public/images/Психолог/6.jpg',
-    '/public/images/Психолог/7.jpg',
-    '/public/images/Психолог/8.jpg',
-    '/public/images/Психолог/9.jpg',
-    '/public/images/Психолог/10.jpg',
-    '/public/images/Психолог/11.jpg',
-    '/public/images/Психолог/12.jpg',
-    '/public/images/Психолог/13.jpg',
+    '../images/Психолог/1.JPG',
+    '../images/Психолог/2.JPG',
+    '../images/Психолог/3.JPG',
+    '../images/Психолог/4.JPG',
+    '../images/Психолог/5.JPG',
+    '../images/Психолог/6.JPG',
+    '../images/Психолог/7.JPG',
+    '../images/Психолог/8.JPG',
+    '../images/Психолог/9.JPG',
+    '../images/Психолог/10.JPG',
+    '../images/Психолог/11.JPG',
+    '../images/Психолог/12.JPG',
+    '../images/Психолог/13.JPG',
   ];
 
   return (

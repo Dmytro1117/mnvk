@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 
 const WebGallery = () => {
   const imagePaths = [
-    '/public/images/Web/1.jpg',
-    '/public/images/Web/2.jpg',
-    '/public/images/Web/3.jpg',
-    '/public/images/Web/4.jpg',
-    '/public/images/Web/5.jpg',
-    '/public/images/Web/6.jpg',
-    '/public/images/Web/7.jpg',
-    '/public/images/Web/8.jpg',
-    '/public/images/Web/9.jpg',
-    '/public/images/Web/10.jpg',
-    '/public/images/Web/11.jpg',
-    '/public/images/Web/12.jpg',
-    '/public/images/Web/13.jpg',
-    '/public/images/Web/14.jpg',
+    '../images/Web/1.JPG',
+    '../images/Web/2.JPG',
+    '../images/Web/3.JPG',
+    '../images/Web/4.JPG',
+    '../images/Web/5.JPG',
+    '../images/Web/6.JPG',
+    '../images/Web/7.JPG',
+    '../images/Web/8.JPG',
+    '../images/Web/9.JPG',
+    '../images/Web/10.JPG',
+    '../images/Web/11.JPG',
+    '../images/Web/12.JPG',
+    '../images/Web/13.JPG',
+    '../images/Web/14.JPG',
   ];
 
   return (

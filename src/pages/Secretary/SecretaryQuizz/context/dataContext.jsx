@@ -18,7 +18,7 @@ export const DataProvider = ({ children }) => {
 
   // Load JSON Data
   useEffect(() => {
-    fetch('/quizSecretary.json')
+    fetch('../quizSecretary.json')
       .then(res => res.json())
       .then(data => setQuizs(data));
   }, []);

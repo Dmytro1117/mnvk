@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const SecretaryGallery = () => {
   const imagePaths = [
-    '/public/images/Секретарі/1.jpg',
-    '/public/images/Секретарі/2.jpg',
-    '/public/images/Секретарі/3.JPG',
-    '/public/images/Секретарі/4.JPG',
-    '/public/images/Секретарі/5.jpg',
-    '/public/images/Секретарі/4.JPG',
+    '../images/Секретарі/1.jpg',
+    '../images/Секретарі/2.jpg',
+    '../images/Секретарі/3.jpg',
+    '../images/Секретарі/4.jpg',
+    '../images/Секретарі/5.jpg',
+    '../images/Секретарі/4.jpg',
   ];
 
   return (

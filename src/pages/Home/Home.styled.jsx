@@ -77,8 +77,8 @@ export const Hero = styled.div`
       rgba(25, 26, 29, 0.7),
       rgba(47, 48, 58, 0.7)
     ),
-    url(mnvk/src/images/hero.jpg);
-  // url('{hero}');
+    // url(mnvk/src/images/hero.jpg);
+    url(${hero});
 
   // background-size: cover;
   background-position: center;

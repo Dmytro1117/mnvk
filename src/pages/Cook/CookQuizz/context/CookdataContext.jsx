@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from 'react';
-const guizeCookJsonPath = process.env.PUBLIC_URL + '/guizeCook.json';
 
 const DataContext = createContext({});
 
@@ -19,10 +18,9 @@ export const DataProvider = ({ children }) => {
 
   // Load JSON Data
   useEffect(() => {
-    fetch(guizeCookJsonPath)
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error(error));
+    fetch('../quizCook.json')
+      .then(res => res.json())
+      .then(data => setQuizs(data));
   }, []);
 
   // Set a Single Question

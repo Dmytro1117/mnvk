@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Button, Img, Gallery } from './CookGallery.styled';
 import { Link } from 'react-router-dom';
-// import cook from '../../../../public/images/CookImag';
+// import cook from '../../../../assets/CookImag/';
 
 const CookGallery = () => {
   const imagePaths = [
-    '../../../../public/images/CookImag/1.jpg',
-    '../../../../public/images/CookImag/2.jpg',
-    '../../../../public/images/CookImag/3.jpg',
+    '../../../../assets/CookImag/1.jpg',
+    '../../../../assets/CookImag/2.jpg',
+    '../../../../assets/CookImag/3.jpg',
     '../../../../public/images/CookImag/4.jpg',
     '../../../../public/images/CookImag/5.jpg',
     '../../../../public/images/CookImag/6.jpg',

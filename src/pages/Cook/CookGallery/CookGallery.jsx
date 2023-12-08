@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const CookGallery = () => {
   const imagePaths = [
-    '../../../../mnvk/assets/CookImag/1.jpg',
-    '../../../../assets/CookImag/2.jpg',
+    '/assets/CookImag/1.jpg',
+    '../assets/CookImag/2.jpg',
     '../../../../assets/CookImag/3.jpg',
     '../../../../public/images/CookImag/4.jpg',
-    '../../../../public/images/CookImag/5.jpg',
+    '../../../../images/CookImag/5.jpg',
     '../../../../public/images/CookImag/6.jpg',
     '../../../../public/images/CookImag/7.jpg',
     '../../../../public/images/CookImag/8.jpg',

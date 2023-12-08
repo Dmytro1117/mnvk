@@ -13,10 +13,6 @@ const PsychologistGallery = () => {
     '../images/Психолог/7.JPG',
     '../images/Психолог/8.JPG',
     '../images/Психолог/9.JPG',
-    '../images/Психолог/10.JPG',
-    '../images/Психолог/11.JPG',
-    '../images/Психолог/12.JPG',
-    '../images/Психолог/13.JPG',
   ];
 
   return (

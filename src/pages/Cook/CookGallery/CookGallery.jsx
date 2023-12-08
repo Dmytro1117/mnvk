@@ -13,16 +13,6 @@ const CookGallery = () => {
     '../images/CookImag/7.jpg',
     '../images/CookImag/8.jpg',
     '../images/CookImag/9.jpg',
-    '../images/CookImag/10.jpg',
-    '../images/CookImag/11.jpg',
-    '../images/CookImag/12.jpg',
-    '../images/CookImag/13.jpg',
-    '../images/CookImag/14.jpg',
-    '../images/CookImag/15.jpg',
-    '../images/CookImag/16.jpg',
-    '../images/CookImag/17.jpg',
-    '../images/CookImag/18.jpg',
-    '../images/CookImag/19.jpg',
   ];
 
   return (

@@ -1,0 +1,1 @@
+import{_ as p}from"./index-2be1bfaa.js";const m=i=>{i&&i instanceof Function&&p(()=>import("./web-vitals-60d3425a.js"),[]).then(({getCLS:_,getFID:a,getFCP:s,getLCP:t,getTTFB:o})=>{_(i),a(i),s(i),t(i),o(i)})};export{m as r};

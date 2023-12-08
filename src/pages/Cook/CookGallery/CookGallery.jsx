@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const CookGallery = () => {
   const imagePaths = [
-    '../../../../assets/CookImag/1.jpg',
+    '../../../../mnvk/assets/CookImag/1.jpg',
     '../../../../assets/CookImag/2.jpg',
     '../../../../assets/CookImag/3.jpg',
     '../../../../public/images/CookImag/4.jpg',

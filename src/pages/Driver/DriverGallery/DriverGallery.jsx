@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const DriverGallery = () => {
   const imagePaths = [
     '/Водії/1.jpg',
-    '/public/images/Водії/2.jpg',
+    '../public/images/Водії/2.jpg',
     '/public/images/Водії/3.jpg',
     '/public/images/Водії/4.jpg',
     '/public/images/Водії/5.jpg',

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { motion, useAnimation } from 'framer-motion';
 import {
   Section,
@@ -7,8 +7,6 @@ import {
   InfoContainer,
   Text,
   Title,
-  Name,
-  Item,
   CanvasContainer,
   WrappContainer,
   Cont,
@@ -40,10 +38,11 @@ import cookIco from '../../images/Professions/кухар.png';
 
 const Professions = () => {
   const controls = useAnimation();
+  const { isLoaggedIn } = useSelector(state => state.auth);
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.getElementById('yourElementId'); // Replace with the actual ID of your element
+      const element = document.getElementById('yourElementId');
       if (element) {
         const rect = element.getBoundingClientRect();
         const windowHeight =
@@ -99,48 +98,118 @@ const Professions = () => {
           <ProfessionList>
             <ProfessionItem>
               <ProfessionImg src={driverIco} alt="Водій" />
-              <NavLin to="/driver">
+
+              {isLoaggedIn ? (
+                <NavLin to="/driver">
+                  <ProfessionText>
+                    Водій автотранспортних засобів (категорії «В», «С»)
+                  </ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>
                   Водій автотранспортних засобів (категорії «В», «С»)
                 </ProfessionText>
-              </NavLin>
+              )}
+
+              {/* <NavLin to="/driver">
+                <ProfessionText>
+                  Водій автотранспортних засобів (категорії «В», «С»)
+                </ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
             <ProfessionItem>
               <ProfessionImg src={locksmithIco} alt="Слюсар" />
-              <NavLin to="/locksmith">
+
+              {isLoaggedIn ? (
+                <NavLin to="/locksmith">
+                  <ProfessionText>
+                    Слюсар механоскладальних робіт
+                  </ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>Слюсар механоскладальних робіт</ProfessionText>
-              </NavLin>
+              )}
+              {/* <NavLin to="/locksmith">
+                <ProfessionText>Слюсар механоскладальних робіт</ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
 
             <ProfessionItem>
               <ProfessionImg src={secretaryIco} alt="Секретар" />
-              <NavLin to="/secretary">
+
+              {isLoaggedIn ? (
+                <NavLin to="/secretary">
+                  <ProfessionText>
+                    Секретар керівника (організації підприємства, установи)
+                  </ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>
                   Секретар керівника (організації підприємства, установи)
                 </ProfessionText>
-              </NavLin>
+              )}
+              {/* <NavLin to="/secretary">
+                <ProfessionText>
+                  Секретар керівника (організації підприємства, установи)
+                </ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
             <ProfessionItem>
               <ProfessionImg src={webIco} alt="Дизайн" />
-              <NavLin to="/web">
+
+              {isLoaggedIn ? (
+                <NavLin to="/web">
+                  <ProfessionText>
+                    Основи web-дизайну та web-програмування
+                  </ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>
                   Основи web-дизайну та web-програмування
                 </ProfessionText>
-              </NavLin>
+              )}
+
+              {/* <NavLin to="/web">
+                <ProfessionText>
+                  Основи web-дизайну та web-програмування
+                </ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
             <ProfessionItem>
               <ProfessionImg src={cookIco} alt="Кухар" />
-              <NavLin to="/cook">
+
+              {isLoaggedIn ? (
+                <NavLin to="/cook">
+                  <ProfessionText>Кухар</ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>Кухар</ProfessionText>
-              </NavLin>
+              )}
+
+              {/* <NavLin to="/cook">
+                <ProfessionText>Кухар</ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
             <ProfessionItem>
               <ProfessionImg src={psychologistIco} alt="Психолог" />
-              <NavLin to="/psychologist">
+
+              {isLoaggedIn ? (
+                <NavLin to="/psychologist">
+                  <ProfessionText>
+                    Основи психологічних знань - система особистісного росту
+                  </ProfessionText>
+                </NavLin>
+              ) : (
                 <ProfessionText>
                   Основи психологічних знань - система особистісного росту
                 </ProfessionText>
-              </NavLin>
+              )}
+
+              {/* <NavLin to="/psychologist">
+                <ProfessionText>
+                  Основи психологічних знань - система особистісного росту
+                </ProfessionText>
+              </NavLin> */}
             </ProfessionItem>
           </ProfessionList>
         </InfoContainer>
@@ -154,7 +223,7 @@ const Professions = () => {
               transition={{ duration: 1.2 }}
             >
               <Cont>
-                <Image src={driver} alt="Donut Masters are the best!!!" />
+                <Image src={driver} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Водій</ProgTitle>
@@ -167,7 +236,7 @@ const Professions = () => {
               </Cont>
 
               <Cont>
-                <Image src={locksmith} alt="Donut Masters are the best!!!" />
+                <Image src={locksmith} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Слюсар</ProgTitle>
@@ -178,7 +247,7 @@ const Professions = () => {
                 </Overlay>
               </Cont>
               <Cont>
-                <Image src={secretary} alt="Donut Masters are the best!!!" />
+                <Image src={secretary} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Секретар</ProgTitle>
@@ -200,7 +269,7 @@ const Professions = () => {
               transition={{ duration: 1.2 }}
             >
               <Cont2>
-                <Image src={web} alt="Donut Masters are the best!!!" />
+                <Image src={web} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Web-дизайнер</ProgTitle>
@@ -213,7 +282,7 @@ const Professions = () => {
               </Cont2>
 
               <Cont2>
-                <Image src={psychologist} alt="Donut Masters are the best!!!" />
+                <Image src={psychologist} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Психолог</ProgTitle>
@@ -226,7 +295,7 @@ const Professions = () => {
                 </Overlay2>
               </Cont2>
               <Cont2>
-                <Image src={cook} alt="Donut Masters are the best!!!" />
+                <Image src={cook} alt="Profession" />
 
                 <TextContainer>
                   <ProgTitle>Кухар</ProgTitle>

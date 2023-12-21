@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy } from 'react';
-// import { PrivateRoute } from './PrivateRoute';
+import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { Loader } from './Loader/Loader';
 import { refreshUser } from '../redux/Authorization/operations';
@@ -140,11 +140,11 @@ export const App = () => {
           <Route path="/locksmith/lec" element={<LocksmithLecture />} />
           <Route path="/locksmith/test" element={<LocksmithQuizz />} />
 
-          <Route path="/cook" element={<Cook />} />
+          {/* <Route path="/cook" element={<Cook />} />
           <Route path="/cook/about" element={<CookAbout />} />
           <Route path="/cook/gallery" element={<CookGallery />} />
           <Route path="/cook/lec" element={<CookLecture />} />
-          <Route path="/cook/test" element={<CookQuizz />} />
+          <Route path="/cook/test" element={<CookQuizz />} /> */}
 
           <Route path="/psychologist" element={<Psychologist />} />
           <Route path="/psychologist/about" element={<PsychologistAbout />} />
@@ -154,25 +154,48 @@ export const App = () => {
           />
           <Route path="/psychologist/lec" element={<PsychologistLecture />} />
           <Route path="/psychologist/test" element={<PsychologistQuizz />} />
-          {/* <Route
-            path="/contacts"
+
+          <Route
+            path="/cook"
+            element={<PrivateRoute component={<Cook />} redirectTo="/login" />}
+          />
+
+          <Route
+            path="/cook/about"
             element={
-              <PrivateRoute component={<Contactlist />} redirectTo="/login" />
+              <PrivateRoute component={<CookAbout />} redirectTo="/login" />
             }
-          /> */}
+          />
+
+          <Route
+            path="/cook/gallery"
+            element={
+              <PrivateRoute component={<CookGallery />} redirectTo="/login" />
+            }
+          />
+
+          <Route
+            path="/cook/lec"
+            element={
+              <PrivateRoute component={<CookLecture />} redirectTo="/login" />
+            }
+          />
+
+          <Route
+            path="/cook/test"
+            element={
+              <PrivateRoute component={<CookQuizz />} redirectTo="/login" />
+            }
+          />
+
           <Route
             path="/login"
-            element={
-              <RestrictedRoute redirectTo="/contacts" component={<Login />} />
-            }
+            element={<RestrictedRoute redirectTo="/" component={<Login />} />}
           />
           <Route
             path="/register"
             element={
-              <RestrictedRoute
-                redirectTo="/contacts"
-                component={<Register />}
-              />
+              <RestrictedRoute redirectTo="/" component={<Register />} />
             }
           />
           <Route path="*" element={<Navigate to="/" />} />

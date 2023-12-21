@@ -31,18 +31,19 @@ export const AppBar = () => {
               <HomeIcon />
               Головна
             </Link>
-            <Link to="/driver">Водій</Link>
+            {/* <Link to="/driver">Водій</Link>
             <Link to="/secretary">Секретар</Link>
             <Link to="/web">Дизайнер</Link>
-            <Link to="/locksmith">Слюсар</Link>
-            <Link to="/cook">Кухар</Link>
-            <Link to="/psychologist">Психолог</Link>
-            {/* {isLoaggedIn && (
-              <Link to="/secretary">
-                <ContactIcon />
-                Контакти
-              </Link>
-            )} */}
+            <Link to="/locksmith">Слюсар</Link> */}
+            {/* <Link to="/cook">Кухар</Link> */}
+            {/* <Link to="/psychologist">Психолог</Link> */}
+
+            {isLoaggedIn && <Link to="/driver">Водій</Link>}
+            {isLoaggedIn && <Link to="/secretary">Секретар</Link>}
+            {isLoaggedIn && <Link to="/web">Дизайнер</Link>}
+            {isLoaggedIn && <Link to="/locksmith">Слюсар</Link>}
+            {isLoaggedIn && <Link to="/cook">Кухар</Link>}
+            {isLoaggedIn && <Link to="/psychologist">Психолог</Link>}
           </div>
           <div>
             {isLoaggedIn ? (

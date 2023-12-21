@@ -1,8 +1,28 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import DataContext from '../context/LocksmithdataContext';
 
 const Start = () => {
-  const { startQuiz, showStart } = useContext(DataContext);
+  const { startQuiz, showStart, quizStarted, setQuizStarted } =
+    useContext(DataContext);
+  const [hasTakenQuiz, setHasTakenQuiz] = useState(false);
+
+  useEffect(() => {
+    const hasTakenQuizFromStorage = localStorage.getItem(
+      'hasTakenQuizLocksmith',
+    );
+    if (hasTakenQuizFromStorage) {
+      setHasTakenQuiz(true);
+    }
+  }, []);
+
+  const handleStartQuiz = () => {
+    if (!quizStarted && !hasTakenQuiz) {
+      startQuiz(setQuizStarted);
+      setHasTakenQuiz(true);
+      localStorage.setItem('hasTakenQuizLocksmith', 'true');
+    }
+  };
+
   return (
     <section
       className="text-white text-center bg-dark"
@@ -14,10 +34,13 @@ const Start = () => {
             <h1 className="fw-bold mb-4">Атестацiя</h1>
             <h1 className="fw-bold mb-4">"Слюсар механоскладальних робіт"</h1>
             <button
-              onClick={startQuiz}
-              className="btn px-4 py-2 bg-light text-dark fw-bold"
+              onClick={handleStartQuiz}
+              className={`btn px-4 py-2 bg-light text-dark fw-bold ${
+                quizStarted || hasTakenQuiz ? 'disabled' : ''
+              }`}
+              disabled={quizStarted || hasTakenQuiz}
             >
-              Розпочати тестування
+              {hasTakenQuiz ? 'Ви вже пройшли тест' : 'Розпочати тестування'}
             </button>
           </div>
         </div>

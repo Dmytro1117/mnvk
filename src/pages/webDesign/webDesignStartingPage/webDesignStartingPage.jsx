@@ -2,7 +2,7 @@ import React from 'react';
 import { Img, Section, Title } from './webDesignStartingPage.styled';
 import hero from '../../../images/Professions/web.png';
 import { HomeLink } from '../../Home/Home.styled';
-import reportWebVitals from '../../Locksmith/LocksmithQuizz/LocksmithreportWebVitals';
+import reportWebVitals from '../../webDesign/webDesignQuizz/webDesignreportWebVitals';
 
 const StartingPageWeb = () => {
   return (

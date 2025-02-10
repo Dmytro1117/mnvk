@@ -47,7 +47,7 @@ const WebDesign = lazy(() =>
   import('../pages/webDesign/webDesignStartingPage/webDesignStartingPage'),
 );
 const WebDesignAbout = lazy(() =>
-  import('../pages/WebDesign/WebDesignAbout/WebDesignAbout'),
+  import('../pages/webDesign/webDesignAbout/webDesignAbout'),
 );
 const WebDesignGallery = lazy(() =>
   import('../pages/WebDesign/WebDesignGallery/WebDesignGallery'),

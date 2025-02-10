@@ -7,7 +7,6 @@ const SecretaryGallery = () => {
     '../images/Секретарі/1.jpg',
     '../images/Секретарі/2.jpg',
     '../images/Секретарі/3.jpg',
-    '../images/Секретарі/4.jpg',
   ];
 
   return (

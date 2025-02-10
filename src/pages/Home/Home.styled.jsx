@@ -64,22 +64,15 @@ export const HomeLink = styled(Link)`
 `;
 
 export const Hero = styled.div`
-  // padding: 0 15px;
   width: calc(100vw - 4px);
-  // height: 540px;
-  // background-image: url(/src/images/Hero.jpg);
-  // background-repeat: no-repeat
-  background-size: contain;
 
-  // background-color: #6b6e72;
+  background-size: contain;
 
   background-image: linear-gradient(
       rgba(25, 26, 29, 0.7),
       rgba(47, 48, 58, 0.7)
     ),
-    // url(mnvk/src/images/hero.jpg);
-    url(${hero});
+    url('/images/hero.jpg');
 
-  // background-size: cover;
   background-position: center;
 `;

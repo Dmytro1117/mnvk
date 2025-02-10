@@ -44,7 +44,7 @@ const SecretaryQuizz = lazy(() =>
 );
 
 const WebDesign = lazy(() =>
-  import('../pages/WebDesign/WebDesignStartingPage/WebDesignStartingPage'),
+  import('../pages/WebDesign/webDesignStartingPage/webDesignStartingPage'),
 );
 const WebDesignAbout = lazy(() =>
   import('../pages/WebDesign/WebDesignAbout/WebDesignAbout'),

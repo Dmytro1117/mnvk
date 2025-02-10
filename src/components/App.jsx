@@ -50,10 +50,10 @@ const WebDesignAbout = lazy(() =>
   import('../pages/webDesign/webDesignAbout/webDesignAbout'),
 );
 const WebDesignGallery = lazy(() =>
-  import('../pages/WebDesign/WebDesignGallery/WebDesignGallery'),
+  import('../pages/webDesign/webDesignGallery/webDesignGallery'),
 );
 const WebDesignLecture = lazy(() =>
-  import('../pages/WebDesign/WebDesignLecture/WebDesignLecture'),
+  import('../pages/webDesign/webDesignLecture/webDesignLecture'),
 );
 const WebDesignQuizz = lazy(() =>
   import('../pages/WebDesign/WebDesignQuizz/WebDesignQuizz'),

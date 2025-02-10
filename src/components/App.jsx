@@ -56,7 +56,7 @@ const WebDesignLecture = lazy(() =>
   import('../pages/webDesign/webDesignLecture/webDesignLecture'),
 );
 const WebDesignQuizz = lazy(() =>
-  import('../pages/WebDesign/WebDesignQuizz/WebDesignQuizz'),
+  import('../pages/webDesign/webDesignQuizz/webDesignQuizz'),
 );
 
 const Locksmith = lazy(() =>

@@ -10,7 +10,7 @@ import {
   Logo,
   SearchLogo,
 } from './AppBar.styled';
-import Logotip from '../../../favicon.png';
+import Logotip from '../../../public/favicon.png';
 import { Loader } from '../Loader/Loader';
 import { UserMenu } from '../../components/UserMenu/UserMenu';
 

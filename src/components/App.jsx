@@ -116,76 +116,186 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
 
-          <Route path="/driver" element={<Driver />} />
-          <Route path="/driver/about" element={<DriverAbout />} />
-          <Route path="/driver/gallery" element={<DriverGallery />} />
-          <Route path="/driver/lec" element={<DriverLecture />} />
-          <Route path="/driver/test" element={<DriverQuizz />} />
+          <Route
+            path="/driver"
+            element={<PrivateRoute component={<Driver />} redirectTo="/" />}
+          />
+          <Route
+            path="/driver/about"
+            element={
+              <PrivateRoute component={<DriverAbout />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/driver/gallery"
+            element={
+              <PrivateRoute component={<DriverGallery />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/driver/lec"
+            element={
+              <PrivateRoute component={<DriverLecture />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/driver/test"
+            element={
+              <PrivateRoute component={<DriverQuizz />} redirectTo="/" />
+            }
+          />
 
-          <Route path="/secretary" element={<Secretary />} />
-          <Route path="/secretary/about" element={<SecretaryAbout />} />
-          <Route path="/secretary/gallery" element={<SecretaryGallery />} />
-          <Route path="/secretary/lec" element={<SecretaryLecture />} />
-          <Route path="/secretary/test" element={<SecretaryQuizz />} />
+          <Route
+            path="/secretary"
+            element={<PrivateRoute component={<Secretary />} redirectTo="/" />}
+          />
+          <Route
+            path="/secretary/about"
+            element={
+              <PrivateRoute component={<SecretaryAbout />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/secretary/gallery"
+            element={
+              <PrivateRoute component={<SecretaryGallery />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/secretary/lec"
+            element={
+              <PrivateRoute component={<SecretaryLecture />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/secretary/test"
+            element={
+              <PrivateRoute component={<SecretaryQuizz />} redirectTo="/" />
+            }
+          />
 
-          <Route path="/web" element={<WebDesign />} />
-          <Route path="/web/about" element={<WebDesignAbout />} />
-          <Route path="/web/gallery" element={<WebDesignGallery />} />
-          <Route path="/web/lec" element={<WebDesignLecture />} />
-          <Route path="/web/test" element={<WebDesignQuizz />} />
+          <Route
+            path="/web"
+            element={<PrivateRoute component={<WebDesign />} redirectTo="/" />}
+          />
+          <Route
+            path="/web/about"
+            element={
+              <PrivateRoute component={<WebDesignAbout />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/web/gallery"
+            element={
+              <PrivateRoute component={<WebDesignGallery />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/web/lec"
+            element={
+              <PrivateRoute component={<WebDesignLecture />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/web/test"
+            element={
+              <PrivateRoute component={<WebDesignQuizz />} redirectTo="/" />
+            }
+          />
 
-          <Route path="/locksmith" element={<Locksmith />} />
-          <Route path="/locksmith/about" element={<LocksmithAbout />} />
-          <Route path="/locksmith/gallery" element={<LocksmithGallery />} />
-          <Route path="/locksmith/lec" element={<LocksmithLecture />} />
-          <Route path="/locksmith/test" element={<LocksmithQuizz />} />
+          <Route
+            path="/locksmith"
+            element={<PrivateRoute component={<Locksmith />} redirectTo="/" />}
+          />
+          <Route
+            path="/locksmith/about"
+            element={
+              <PrivateRoute component={<LocksmithAbout />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/locksmith/gallery"
+            element={
+              <PrivateRoute component={<LocksmithGallery />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/locksmith/lec"
+            element={
+              <PrivateRoute component={<LocksmithLecture />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/locksmith/test"
+            element={
+              <PrivateRoute component={<LocksmithQuizz />} redirectTo="/" />
+            }
+          />
 
-          {/* <Route path="/cook" element={<Cook />} />
-          <Route path="/cook/about" element={<CookAbout />} />
-          <Route path="/cook/gallery" element={<CookGallery />} />
-          <Route path="/cook/lec" element={<CookLecture />} />
-          <Route path="/cook/test" element={<CookQuizz />} /> */}
-
-          <Route path="/psychologist" element={<Psychologist />} />
-          <Route path="/psychologist/about" element={<PsychologistAbout />} />
+          <Route
+            path="/psychologist"
+            element={
+              <PrivateRoute component={<Psychologist />} redirectTo="/" />
+            }
+          />
+          <Route
+            path="/psychologist/about"
+            element={
+              <PrivateRoute component={<PsychologistAbout />} redirectTo="/" />
+            }
+          />
           <Route
             path="/psychologist/gallery"
-            element={<PsychologistGallery />}
+            element={
+              <PrivateRoute
+                component={<PsychologistGallery />}
+                redirectTo="/"
+              />
+            }
           />
-          <Route path="/psychologist/lec" element={<PsychologistLecture />} />
-          <Route path="/psychologist/test" element={<PsychologistQuizz />} />
+          <Route
+            path="/psychologist/lec"
+            element={
+              <PrivateRoute
+                component={<PsychologistLecture />}
+                redirectTo="/"
+              />
+            }
+          />
+          <Route
+            path="/psychologist/test"
+            element={
+              <PrivateRoute component={<PsychologistQuizz />} redirectTo="/" />
+            }
+          />
 
           <Route
             path="/cook"
-            element={<PrivateRoute component={<Cook />} redirectTo="/login" />}
+            element={<PrivateRoute component={<Cook />} redirectTo="/" />}
           />
 
           <Route
             path="/cook/about"
-            element={
-              <PrivateRoute component={<CookAbout />} redirectTo="/login" />
-            }
+            element={<PrivateRoute component={<CookAbout />} redirectTo="/" />}
           />
 
           <Route
             path="/cook/gallery"
             element={
-              <PrivateRoute component={<CookGallery />} redirectTo="/login" />
+              <PrivateRoute component={<CookGallery />} redirectTo="/" />
             }
           />
 
           <Route
             path="/cook/lec"
             element={
-              <PrivateRoute component={<CookLecture />} redirectTo="/login" />
+              <PrivateRoute component={<CookLecture />} redirectTo="/" />
             }
           />
 
           <Route
             path="/cook/test"
-            element={
-              <PrivateRoute component={<CookQuizz />} redirectTo="/login" />
-            }
+            element={<PrivateRoute component={<CookQuizz />} redirectTo="/" />}
           />
 
           <Route

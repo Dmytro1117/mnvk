@@ -5,13 +5,12 @@ import {
   RegIcon,
   LogInIcon,
   HomeIcon,
-  // ContactIcon,
   Container,
   Header,
   Logo,
   SearchLogo,
 } from './AppBar.styled';
-import Logotip from '../../../public/favicon.png';
+import Logotip from '../../../favicon.png';
 import { Loader } from '../Loader/Loader';
 import { UserMenu } from '../../components/UserMenu/UserMenu';
 
@@ -31,12 +30,6 @@ export const AppBar = () => {
               <HomeIcon />
               Головна
             </Link>
-            {/* <Link to="/driver">Водій</Link>
-            <Link to="/secretary">Секретар</Link>
-            <Link to="/web">Дизайнер</Link>
-            <Link to="/locksmith">Слюсар</Link> */}
-            {/* <Link to="/cook">Кухар</Link> */}
-            {/* <Link to="/psychologist">Психолог</Link> */}
 
             {isLoaggedIn && <Link to="/driver">Водій</Link>}
             {isLoaggedIn && <Link to="/secretary">Секретар</Link>}

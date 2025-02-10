@@ -2,7 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 import { register, loginization, logOut, refreshUser } from './operations';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-// це для того щоб виводити помилки в тостах
 const handlePending = state => {
   state.isLoading = true;
   state.error = null;
@@ -22,7 +21,7 @@ const handleRejected = (state, action) => {
 const authSlise = createSlice({
   name: 'auth',
   initialState: {
-    user: { email: null, password: null },
+    user: { email: null, password: null, name: null },
     token: null,
     isLoaggedIn: false,
     isRefreshing: false,
@@ -33,9 +32,7 @@ const authSlise = createSlice({
     builder
       .addCase(register.pending, handlePending)
       .addCase(register.fulfilled, (state, action) => {
-        state.token = action.payload.token;
         state.user = action.payload.user;
-        state.isLoaggedIn = true;
         state.isLoading = false;
       })
       .addCase(register.rejected, handleRejected)
@@ -48,18 +45,6 @@ const authSlise = createSlice({
         state.isLoading = false;
       })
       .addCase(loginization.rejected, handleRejected)
-
-      .addCase(logOut.pending, handlePending)
-      .addCase(logOut.fulfilled, state => {
-        state.user = { email: null, password: null };
-        state.token = null;
-        state.isLoaggedIn = false;
-        state.isRefreshing = false;
-        state.error = null;
-        state.isLoading = false;
-      })
-      .addCase(logOut.rejected, handleRejected)
-
       .addCase(refreshUser.pending, state => {
         state.isRefreshing = true;
       })
@@ -70,7 +55,17 @@ const authSlise = createSlice({
       })
       .addCase(refreshUser.rejected, (state, action) => {
         state.isRefreshing = false;
-      });
+      })
+      .addCase(logOut.pending, handlePending)
+      .addCase(logOut.fulfilled, state => {
+        state.user = { email: null, password: null };
+        state.token = null;
+        state.isLoaggedIn = false;
+        state.isRefreshing = false;
+        state.error = null;
+        state.isLoading = false;
+      })
+      .addCase(logOut.rejected, handleRejected);
   },
 });
 

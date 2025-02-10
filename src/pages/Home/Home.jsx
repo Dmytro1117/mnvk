@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useSelector } from 'react-redux';
-import { Tex, Container, HomeLink, UnderTitle, Hero } from './Home.styled';
+import { Tex, Container, Hero } from './Home.styled';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import Professions from '../../components/Professions/Professions';
 import Video from '../../components/Vdeo/Vdeo';

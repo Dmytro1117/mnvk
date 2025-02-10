@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 const CookGallery = () => {
   const imagePaths = [
-    '../images/CookImag/1.jpg',
-    '../images/CookImag/2.jpg',
+    '../images/CookImag/1.JPG',
+    '../images/CookImag/2.JPG',
     '../images/CookImag/3.jpg',
-    '../images/CookImag/4.jpg',
-    '../images/CookImag/5.jpg',
-    '../images/CookImag/6.jpg',
-    '../images/CookImag/7.jpg',
+    '../images/CookImag/4.JPG',
+    '../images/CookImag/5.JPG',
+    '../images/CookImag/6.JPG',
+    '../images/CookImag/7.JPG',
     '../images/CookImag/8.jpg',
-    '../images/CookImag/9.jpg',
+    '../images/CookImag/9.JPG',
   ];
 
   return (

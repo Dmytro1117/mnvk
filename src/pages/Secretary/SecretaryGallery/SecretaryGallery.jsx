@@ -8,8 +8,6 @@ const SecretaryGallery = () => {
     '../images/Секретарі/2.jpg',
     '../images/Секретарі/3.jpg',
     '../images/Секретарі/4.jpg',
-    '../images/Секретарі/5.jpg',
-    '../images/Секретарі/4.jpg',
   ];
 
   return (

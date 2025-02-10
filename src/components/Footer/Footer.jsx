@@ -49,7 +49,7 @@ const Footer = () => {
             </Svg>
           </SocItem>
         </Soclist> */}
-        <Tex>&#169; 2023 | Всі права захищені |</Tex>
+        <Tex>&#169; 2025 | Всі права захищені |</Tex>
       </Container>
     </Footerr>
   );

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import hero from '../../images/hero.jpg';
+import hero from '../../../public/hero.jpg';
 
 export const Tex = styled.p`
   text-align: center;
@@ -72,7 +72,7 @@ export const Hero = styled.div`
       rgba(25, 26, 29, 0.7),
       rgba(47, 48, 58, 0.7)
     ),
-    url('/images/hero.jpg');
+    url(${hero});
 
   background-position: center;
 `;

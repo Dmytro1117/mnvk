@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import hero from '../../images/hero.jpg';
+// import hero from '../../images/hero.jpg';
 
 export const Tex = styled.p`
   text-align: center;

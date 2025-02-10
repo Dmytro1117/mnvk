@@ -2,7 +2,8 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-axios.defaults.baseURL = 'http://localhost:8080/api';
+axios.defaults.baseURL = 'https://mnvk-api-node-js.onrender.com/';
+// axios.defaults.baseURL = 'http://localhost:8080/api';
 // axios.defaults.baseURL = 'https://connections-api.goit.global/';
 
 const setAuthHeader = token =>
